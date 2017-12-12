@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" href={{ url('bookstore')}}><i class="fas fa-home"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>{{ result.titre }}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <img src={{ result.image }} alt="cover" class="img-fluid card-img-left" />
+                <div class="card-body">
+                    <p><strong class="text-uppercase">Author :</strong> {{result.auteur}}</p>
+                    <p><strong class="text-uppercase">Description :</strong> {{result.description}}</p>
+                    <p><strong class="text-uppercase">Categories :</strong>
+                        {% for cat in result.category %}
+                            <a href={{ url('category', {id: cat.id})}}=>{{ cat.name }}</a>
+                        {% endfor %}</p>
+                    <p><strong class="text-uppercase">Publication date :</strong> {{result.date_de_publication|date("d/m/Y")}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

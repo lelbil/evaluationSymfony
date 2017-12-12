@@ -1,0 +1,4 @@
+INSERT INTO formation.book (titre, auteur, description, image, date_de_publication) VALUES ('Book1', 'Author1', 'Description1', 'http://dummyimage.com/400x400/000/fff.jpg&text=book1', '2017-12-12 13:34:52');
+INSERT INTO formation.book (titre, auteur, description, image, date_de_publication) VALUES ('Book2', 'Author1', 'Decription2', 'http://dummyimage.com/400x400/000/fff.jpg&text=book1', '2012-07-12 13:35:13');
+INSERT INTO formation.book (titre, auteur, description, image, date_de_publication) VALUES ('Book3', 'Author3', 'Desc3', 'http://dummyimage.com/400x400/000/fff.jpg&text=book1', '2023-06-16 13:35:51');
+INSERT INTO formation.book (titre, auteur, description, image, date_de_publication) VALUES ('book4', 'Author4', 'Michelle ', 'http://dummyimage.com/400x400/000/fff.jpg&text=book1', '2010-03-02 13:37:10');
